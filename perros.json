@@ -1,0 +1,26 @@
+[
+  {
+    "raza": "mixto",
+    "vacunado": true,
+    "disponibleAdopcion": false,
+    "nombre": "capry",
+    "edad": 7,
+    "peso": 5.0
+  },
+  {
+    "raza": "golden",
+    "vacunado": false,
+    "disponibleAdopcion": false,
+    "nombre": "jose",
+    "edad": 4,
+    "peso": 3.2
+  },
+  {
+    "raza": "mixto",
+    "vacunado": false,
+    "disponibleAdopcion": true,
+    "nombre": "uno",
+    "edad": 6,
+    "peso": 8.5
+  }
+]

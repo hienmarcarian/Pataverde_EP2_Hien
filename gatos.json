@@ -1,0 +1,14 @@
+[
+  {
+    "exterior": true,
+    "nombre": "orion",
+    "edad": 4,
+    "peso": 7.5
+  },
+  {
+    "exterior": true,
+    "nombre": "pelusa",
+    "edad": 7,
+    "peso": 6.5
+  }
+]

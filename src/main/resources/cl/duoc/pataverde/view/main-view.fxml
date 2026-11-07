@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="550.0" prefWidth="950.0" spacing="20" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.duoc.pataverde.controller.MascotaController">
+    <Label text="Clínica Veterinaria PataVerde" />
+
+    <Label text="Sistema de registro de mascotas" />
+   <TextField fx:id="txtBusqueda" prefHeight="36.0" prefWidth="950.0" promptText="Busqueda" />
+   <Label fx:id="lblMensaje" prefHeight="17.0" prefWidth="357.0" text="Mensaje" />
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="250.0">
+            <children>
+               <ComboBox fx:id="cmbTipoMascota" prefWidth="150.0" promptText="Tipo mascota" />
+               <TextField fx:id="txtNombreMascota" promptText="nombre mascota" />
+               <TextField fx:id="txtEdadMascota" promptText="edad de la mascota" />
+               <TextField fx:id="txtPesoMascota" promptText="peso de la mascota( kg)" />
+               <TextField fx:id="txtRazaPerro" promptText="Raza del perro" />
+               <CheckBox fx:id="chkVacunado" mnemonicParsing="false" text="Vacunado" />
+               <CheckBox fx:id="chkAdopcion" mnemonicParsing="false" text="disponible para adopcion" />
+               <CheckBox fx:id="chkExterior" mnemonicParsing="false" text="vive en exterior" />
+               <Button fx:id="btnRegistrar" mnemonicParsing="false" text="Registrar" />
+            </children>
+         </VBox>
+         <VBox prefHeight="200.0" prefWidth="550.0">
+            <children>
+               <TableView fx:id="tablaMascotas" prefHeight="550.0" prefWidth="950.0">
+                 <columns>
+                   <TableColumn fx:id="colTipo" prefWidth="88.0" text="Tipo" />
+                   <TableColumn fx:id="colNombre" prefWidth="62.0" text="Nombre" />
+                     <TableColumn fx:id="colEdad" prefWidth="75.0" text="Edad" />
+                     <TableColumn fx:id="colPeso" prefWidth="75.0" text="Peso (kg)" />
+                     <TableColumn fx:id="colCosto" prefWidth="116.0" text="Costo consulta" />
+                 </columns>
+               </TableView>
+               <Button fx:id="btnEliminar" mnemonicParsing="false" text="Eliminar" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   <TextField />
+
+</VBox>
